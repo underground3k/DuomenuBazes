@@ -1,0 +1,46 @@
+
+filmo rekomendacijos appsas
+
+  front- React
+  back- spring boot
+  recomendation engine- python 
+  database- postgreSQL ar mongoDB
+  movie data- tmdb api
+
+
+  Write user stories ("As a user, I can rate a movie...")
+  Maintain and prioritize the backlog on Jira
+  Decide what features go into each sprint
+  Review finished work and decide if it meets requirements
+
+  A-
+  Designs the PostgreSQL database schema — tables for users, movies, ratings, watchlists
+  Writes the database models and entities in Spring Boot (JPA/Hibernate)
+  Builds REST API endpoints like GET /movies, GET /movies/{id}, POST /ratings
+  Handles database migrations and relationships between tables
+  Makes sure the backend returns clean, structured data that the frontend can use
+
+
+  B- spring boot, recomendations python ML
+  Builds user authentication in Spring Boot — register, login, JWT tokens
+  Builds the connection between Spring Boot and the Python ML service (HTTP calls)
+  Builds the Python FastAPI service that runs the recommendation algorithm
+  Implements content-based filtering in Sprint 2 and collaborative filtering in Sprint 3
+  Exposes a /recommendations/{userId} endpoint that Spring Boot can call
+
+
+  C-
+  Sets up the React project structure and routing between pages
+  Builds all the main pages: Home, Movie List, Movie Detail, Login, Register, Profile
+  Integrates the TMDB API to fetch real movie posters, descriptions, and genres
+  Builds reusable UI components like movie cards, star rating widget, navigation bar, search bar
+  Makes the app look good — handles layout, colors, fonts, and responsive design for mobile
+
+  D-
+  Connects the React frontend to the Spring Boot backend — writes all the API calls (fetch/axios)
+  Manages frontend state — what happens when a user logs in, rates a movie, or gets recommendations
+  Handles error states — what the user sees when something goes wrong (loading spinners, error messages)
+  Writes tests for both frontend and backend features
+  Deploys the frontend to Vercel and the backend to Render or Railway
+  Makes sure the live deployed version works correctly end-to-end
+
